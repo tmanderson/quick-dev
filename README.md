@@ -8,7 +8,7 @@ $> npm install -g quick-dev-cli
 ```
 
 ### Usage
-Start a dev server from the current directory:
+Start a dev server from the current directory (no args required by default):
 
 ```
 $> qd [-d <directory>] [-p <port>] [-b <.babelrc>] [-w <webpack.config>] [-e <index.js>] [-i <index.html>]
