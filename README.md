@@ -8,24 +8,29 @@ $> npm install -g quick-dev-cli
 ```
 
 ### Usage
-**No arguments are required**
+Start a dev server from the current directory:
 
 ```
-$> qd [-d <directory>] [-p <port>] [-b <.babelrc>] [-w <webpack.config>] [-e <entry.js>] [-i <index.html>]
+$> qd [-d <directory>] [-p <port>] [-b <.babelrc>] [-w <webpack.config>] [-e <index.js>] [-i <index.html>]
 ```
 
 QD provides the following with no configuration:
 
+- Default entry file `index.js`
+  - Override with the `-e` option
 - [Default index.html](templates/index.html.tmp)
   - If an `index.html` is found in directory, will override
   - Auto loads any `css` files in base directory
+  - Override with the `-i` option
 - [Default babel config](templates/.babelrc.tmp)
+  - Override with the `-b` option
 - [Default webpack config](templates/webpack.config.js.tmp)
+  - Override with the `-w` option
 
 You can override these with their respective arguments
-  - `--babel <location to .babelrc>`
-  - `--webpack <location to webpack.config>`
-  - `--index <location to index.html>`
+  - `-b, --babel <location to .babelrc>`
+  - `-w, --webpack <location to webpack.config>`
+  - `-i, --index <location to index.html>`
 
 ### Babel configuration
 #### Presets
