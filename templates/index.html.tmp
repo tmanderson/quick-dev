@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title><%=dirName%></title>
+  <%styles.forEach(function(styles) {%><style><%=styles%></style><%});%>
+</head>
+<body>
+  <%=content%>
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      const script = document.createElement('script');
+      script.src = '/bundle.js';
+      document.body.appendChild(script);
+    });
+  </script>
+</body>
+</html>

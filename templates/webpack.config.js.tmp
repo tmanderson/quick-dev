@@ -1,0 +1,48 @@
+({
+  mode: 'development',
+  target: 'web',
+  context: '<%=baseDir%>',
+  entry: {
+    app: './<%=entryFile%>',
+  },
+  output: {
+    path: '<%=outputDir%>',
+    publicPath: "/",
+    filename: 'bundle.js',
+  },
+  resolve: {
+    modules: ['<%=modulesDir%>', '<%=baseDir%>']
+  },
+  resolveLoader: {
+    modules: ['<%=modulesDir%>', '<%=baseDir%>']
+  },
+  module: {
+    rules: [
+      {
+        test: /\.js$/,
+        loader: 'babel-loader',
+        include: ['<%=modulesDir%>'],
+        options: <%=babelConfig%>
+      },
+      {
+        test: /\.(scss|sass|scss)$/,
+        use: [
+          'style-loader',
+          {
+            loader: 'css-loader',
+            options: { modules: false, root: '.' }
+          },
+          'sass-loader'
+        ]
+      },
+      {
+        test: /\.json$/,
+        loader: "json-loader"
+      }
+    ]
+  },
+  devServer: {
+    contentBase: '<%=baseDir%>'
+  },
+  devtool: "eval-source-map"
+});

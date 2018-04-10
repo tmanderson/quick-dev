@@ -1,0 +1,49 @@
+{
+  "name": "quick-dev",
+  "version": "0.1.0",
+  "description": "Zero-configuration web environments with babel and webpack",
+  "main": "bin/index.js",
+  "bin": {
+    "qd": "index.js"
+  },
+  "dependencies": {
+    "babel-core": "^6.26.0",
+    "babel-plugin-syntax-jsx": "^6.18.0",
+    "babel-plugin-transform-class-properties": "^6.24.1",
+    "babel-cli": "^6.26.0",
+    "babel-plugin-transform-object-rest-spread": "^6.26.0",
+    "babel-plugin-transform-react-jsx": "^6.24.1",
+    "babel-preset-env": "^1.6.1",
+    "babel-preset-react": "^6.24.1",
+    "babel-preset-stage-2": "^6.24.1",
+    "babel-register": "^6.26.0",
+    "babel-runtime": "^6.26.0",
+    "babel-polyfill": "^6.26.0",
+    "json-loader": "^0.5.7",
+    "webpack-serve": "^0.3.1"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tmanderson/quick-dev.git"
+  },
+  "keywords": [
+    "zero-configuration",
+    "development",
+    "dev",
+    "environment",
+    "prototype",
+    "prototyping",
+    "babel",
+    "webpack"
+  ],
+  "author": "Mitch Anderson <mitch@iammitch.com>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/tmanderson/quick-dev/issues"
+  },
+  "homepage": "https://github.com/tmanderson/quick-dev#readme"
+}
