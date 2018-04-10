@@ -4,21 +4,21 @@
   "description": "Zero-configuration web environments with babel and webpack",
   "main": "bin/index.js",
   "bin": {
-    "qd": "index.js"
+    "qd": "bin/index.js"
   },
   "dependencies": {
+    "babel-cli": "^6.26.0",
     "babel-core": "^6.26.0",
     "babel-plugin-syntax-jsx": "^6.18.0",
     "babel-plugin-transform-class-properties": "^6.24.1",
-    "babel-cli": "^6.26.0",
     "babel-plugin-transform-object-rest-spread": "^6.26.0",
     "babel-plugin-transform-react-jsx": "^6.24.1",
+    "babel-polyfill": "^6.26.0",
     "babel-preset-env": "^1.6.1",
     "babel-preset-react": "^6.24.1",
     "babel-preset-stage-2": "^6.24.1",
     "babel-register": "^6.26.0",
     "babel-runtime": "^6.26.0",
-    "babel-polyfill": "^6.26.0",
     "json-loader": "^0.5.7",
     "webpack-serve": "^0.3.1"
   },
