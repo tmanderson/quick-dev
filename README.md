@@ -4,7 +4,7 @@ Zero-configuration web environments with babel and webpack.
 
 ### Installation
 ```
-$> npm install quick-dev
+$> npm install -g quick-dev-cli
 ```
 
 ### Usage

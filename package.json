@@ -1,5 +1,5 @@
 {
-  "name": "quick-dev",
+  "name": "quick-dev-cli",
   "version": "0.1.0",
   "description": "Zero-configuration web environments with babel and webpack",
   "main": "bin/index.js",
